@@ -6,9 +6,11 @@
 2. [Install Mockend GitHub app](https://github.com/apps/mockend) on the newly created repo.
 3. Your `App.js` file is ready to be read, your mission is explained there, or below.
 
-## Launching
+## Launching the app
 
-`yarn start`
+```
+yarn start
+```
 
 ## Deploying
 
@@ -35,6 +37,6 @@ This repo comes with the following libraries installed:
 - Icons: [react-icons](https://react-icons.github.io/react-icons/)
 - Requests: [urql](https://formidable.com/open-source/urql/docs/) if you want to use GraphQL, [React Query](https://react-query.tanstack.com/) otherwise.
 
-Good luck!
+**Good luck!**
 
 If you want to react out for help, questions or clarifications, we are on twitter, [TymateEng](https://twitter.com/TymateEng)
