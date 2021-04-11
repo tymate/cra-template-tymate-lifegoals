@@ -3,7 +3,7 @@
 ## Instructions
 
 1. [Create your own GitHub repo](https://github.com/new). Make it public, and initialize without `README`, `.gitignore` or `licence` file.
-2. Try getting your fake API by going to [https://my-json-server.typicode.com/user/repo](https://my-json-server.typicode.com/user/repo) where `user/repo` represents the GitHub URI of you repo.
+2. Try getting your fake API by going to [https://my-json-server.typicode.com/my-username/my-repo](https://my-json-server.typicode.com/my-username/my-repo) where `my-username/my-repo` represents the GitHub URI of you repo.
 3. Your `App.js` file is ready to be read, your mission is explained there, or below.
 
 ## Launching the app
@@ -14,13 +14,21 @@ yarn start
 
 ## Deploying
 
+### 1. Add `homepage` to `package.json`
+
+```
+"homepage": "https://my-username.github.io/my-repo",
+```
+
 ```
 yarn deploy
 ```
 
+Troubleshooting: [GitHub Pages deployment](https://create-react-app.dev/docs/deployment/#github-pages) en [create-react-app.dev](create-react-app.dev)
+
 ## The mission:
 
-We would like you to create your own **life goals app**. You will be able to get access to a fake API, located at https://my-json-server.typicode.com/user/repo/goals.
+We would like you to create your own **life goals app**. You will be able to get access to a fake API, located at https://my-json-server.typicode.com/my-username/my-repo/goals.
 
 The app should consist of three pages:
 

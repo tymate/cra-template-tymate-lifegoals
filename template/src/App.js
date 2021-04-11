@@ -43,10 +43,10 @@ const App = () => (
             <strong>life goals tracking app</strong>. You will be able to get
             access to a fake API, located at{' '}
             <Code fontSize="md">
-              https://my-json-server.typicode.com/user/repo/goals
+              https://my-json-server.typicode.com/my-username/my-repo/goals
             </Code>
-            , where <Code fontSize="md">user/repo</Code> represents the path to
-            you repository on GitHub.
+            , where <Code fontSize="md">my-username/my-repo</Code> represents
+            the path to you repository on GitHub.
           </Text>
         </VStack>
 
