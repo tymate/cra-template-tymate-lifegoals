@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Uptip.github.io/lifegoals-tracker",
-  "name": "uptip-lifegoals-tracker",
+  "homepage": "https://uptip.github.io/lifegoals-tracker",
+  "name": "lifegoals-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
