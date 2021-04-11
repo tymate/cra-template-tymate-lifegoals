@@ -1,42 +1,178 @@
-import React from 'react';
 import {
-  ChakraProvider,
-  Box,
   Text,
-  Link,
   VStack,
   Code,
-  Grid,
-  theme,
+  Checkbox,
+  Heading,
+  UnorderedList,
+  ListItem,
+  Link,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import Layout from 'components/Layout';
+import { FaTwitter } from 'react-icons/fa';
 
-function App() {
-  return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
+const App = () => (
+  <Layout>
+    <VStack spacing={24} alignItems="flex-start" justifyContent="flex-start">
+      <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
+        <Heading>Checklist</Heading>
+        <VStack spacing={2} alignItems="flex-start" justifyContent="flex-start">
+          <Checkbox>
+            <Text fontSize="lg">GitHub repo created</Text>
+          </Checkbox>
+          <Checkbox>
+            <Text fontSize="lg">Initial commit pushed</Text>
+          </Checkbox>
+          <Checkbox>
+            <Text fontSize="lg">Mockend GitHub app installed (see README)</Text>
+          </Checkbox>
+          <Checkbox>
+            <Text fontSize="lg">
+              <Code fontSize="md">src/App.js</Code> edited (not before reading
+              below, though).
             </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
-  );
-}
+          </Checkbox>
+        </VStack>
+      </VStack>
+
+      <VStack spacing={12} alignItems="flex-start" justifyContent="flex-start">
+        <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
+          <Heading>The mission:</Heading>
+          <Text fontSize="lg">
+            We would like you to create your own{' '}
+            <strong>life goals tracking app</strong>. Because you installed
+            mockend, you will be able to get access to a fake API, located at{' '}
+            <Code fontSize="md">https://mockend.com/user/repo/goals</Code>{' '}
+            (REST) or{' '}
+            <Code fontSize="md">https://mockend.com/user/repo/graphql</Code>{' '}
+            (GraphQL) where <Code fontSize="md">user/repo</Code> represents the
+            path to you repository on GitHub.
+          </Text>
+        </VStack>
+
+        <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
+          <Text fontSize="lg">The app should consist of three pages:</Text>
+          <UnorderedList spacing={2} fontSize="lg">
+            <ListItem>
+              A homepage, <Code fontSize="md">/</Code>, containing the list of
+              you life goals.
+            </ListItem>
+            <ListItem>
+              A goal details page, <Code fontSize="md">/:goalId</Code>,
+              displaying your life goals in more details. What changes between
+              the homepage and the details page is up to you, but we suggest
+              thinking about truncating or hiding the goals description on the
+              homepage.
+            </ListItem>
+            <ListItem>
+              An admin page, <Code fontSize="md">/admin</Code>, where you will
+              be able to create, update and delete you life goals. We would like
+              the <Code fontSize="md">title</Code>,{' '}
+              <Code fontSize="md">description</Code> and{' '}
+              <Code fontSize="md">imageUrl</Code> (consider using Unsplash?) to
+              be mandatory. We would like the{' '}
+              <Code fontSize="md">completion</Code> field to act as checkbox as
+              well as date reference.
+            </ListItem>
+          </UnorderedList>
+        </VStack>
+      </VStack>
+
+      <VStack spacing={12} alignItems="flex-start" justifyContent="flex-start">
+        <Heading>Tools</Heading>
+        <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
+          <Text fontSize="lg">
+            This repo comes with the following libraries installed:
+          </Text>
+          <UnorderedList spacing={2} fontSize="lg">
+            <ListItem>
+              <strong>UI library:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://chakra-ui.com/"
+              >
+                Chakra
+              </Link>
+            </ListItem>
+            <ListItem>
+              <strong>Routing:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://reacttraining.com/blog/react-router-v6-pre/"
+              >
+                react-router-dom v6
+              </Link>
+            </ListItem>
+            <ListItem>
+              <strong>Forms:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://formik.org/docs/overview"
+              >
+                Formik
+              </Link>
+            </ListItem>
+            <ListItem>
+              <strong>Form errors handling:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://github.com/jquense/yup#api"
+              >
+                Yup
+              </Link>
+            </ListItem>
+            <ListItem>
+              <strong>Icons:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://react-icons.github.io/react-icons/"
+              >
+                react-icons
+              </Link>
+            </ListItem>
+            <ListItem>
+              <strong>Requests:</strong>{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://formidable.com/open-source/urql/docs/"
+              >
+                urql
+              </Link>{' '}
+              if you want to use GraphQL,{' '}
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://react-query.tanstack.com/"
+              >
+                React Query
+              </Link>{' '}
+              overwise.
+            </ListItem>
+          </UnorderedList>
+        </VStack>
+
+        <VStack spacing={2} alignItems="flex-start">
+          <Text fontSize="2xl">Good luck!</Text>
+          <Link
+            href="https://twitter.com/TymateEng"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            _hover={{
+              color: 'blue.500',
+            }}
+          >
+            <FaTwitter />
+          </Link>
+        </VStack>
+      </VStack>
+    </VStack>
+  </Layout>
+);
 
 export default App;
