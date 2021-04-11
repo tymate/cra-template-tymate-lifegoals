@@ -9,8 +9,10 @@
 ## Launching the app
 
 ```
-yarn start
+yarn dev
 ```
+
+This command will launch the React App as well as the API on port 3001.
 
 ## Deploying
 
