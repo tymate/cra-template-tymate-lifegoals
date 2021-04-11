@@ -1,7 +1,7 @@
 {
   "package": {
     "name": "lifegoals-tracker",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": true,
     "dependencies": {
       "@chakra-ui/react": "^1.0.0",
@@ -20,7 +20,6 @@
       "react-query": "^3.13.6",
       "react-router-dom": "6.0.0-beta.0",
       "react-scripts": "4.0.3",
-      "urql": "^2.0.2",
       "web-vitals": "^0.2.2"
     },
     "scripts": {

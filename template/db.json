@@ -1,0 +1,11 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Writing a React app",
+      "description": "I’ve always dreamed of becoming a front-end developer",
+      "pictureUrl": "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1200&q=80",
+      "completedAt": "2019-06-10T22:00:00.000Z"
+    }
+  ]
+}
