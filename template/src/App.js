@@ -24,7 +24,7 @@ const App = () => (
             <Text fontSize="lg">Initial commit pushed</Text>
           </Checkbox>
           <Checkbox>
-            <Text fontSize="lg">Mockend GitHub app installed (see README)</Text>
+            <Text fontSize="lg">Accessed my-json-server API (see README)</Text>
           </Checkbox>
           <Checkbox>
             <Text fontSize="lg">
@@ -40,13 +40,13 @@ const App = () => (
           <Heading>The mission:</Heading>
           <Text fontSize="lg">
             We would like you to create your own{' '}
-            <strong>life goals tracking app</strong>. Because you installed
-            mockend, you will be able to get access to a fake API, located at{' '}
-            <Code fontSize="md">https://mockend.com/user/repo/goals</Code>{' '}
-            (REST) or{' '}
-            <Code fontSize="md">https://mockend.com/user/repo/graphql</Code>{' '}
-            (GraphQL) where <Code fontSize="md">user/repo</Code> represents the
-            path to you repository on GitHub.
+            <strong>life goals tracking app</strong>. You will be able to get
+            access to a fake API, located at{' '}
+            <Code fontSize="md">
+              https://my-json-server.typicode.com/user/repo/goals
+            </Code>
+            , where <Code fontSize="md">user/repo</Code> represents the path to
+            you repository on GitHub.
           </Text>
         </VStack>
 
@@ -140,19 +140,10 @@ const App = () => (
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://formidable.com/open-source/urql/docs/"
-              >
-                urql
-              </Link>{' '}
-              if you want to use GraphQL,{' '}
-              <Link
-                rel="noopener noreferrer"
-                target="_blank"
                 href="https://react-query.tanstack.com/"
               >
                 React Query
-              </Link>{' '}
-              overwise.
+              </Link>
             </ListItem>
           </UnorderedList>
         </VStack>
