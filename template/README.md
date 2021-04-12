@@ -2,9 +2,11 @@
 
 ## Instructions
 
-1. [Create your own GitHub repo](https://github.com/new). Make it public, and initialize without `README`, `.gitignore` or `licence` file.
-2. Try getting your fake API by going to [https://my-json-server.typicode.com/my-username/my-repo](https://my-json-server.typicode.com/my-username/my-repo) where `my-username/my-repo` represents the GitHub URI of you repo.
-3. Your `App.js` file is ready to be read, your mission is explained there, or below.
+1. Type the command `npx create-react-app --template @tymate/cra-template-lifegoals` if you haven’t done so already.
+2. [Create your own GitHub repo](https://github.com/new). Make it public, and initialize without `README`, `.gitignore` or `licence` file.
+3. Try getting your fake API by going to [https://my-json-server.typicode.com/my-username/my-repo](https://my-json-server.typicode.com/my-username/my-repo) where `my-username/my-repo` represents the GitHub URI of you repo.
+4. Your `App.js` file is ready to be read, your mission is explained there, or below.
+5. Don’t forget to edit this `README` so that it explains your approch & process.
 
 ## Launching the app
 

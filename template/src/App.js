@@ -15,6 +15,22 @@ const App = () => (
   <Layout>
     <VStack spacing={24} alignItems="flex-start" justifyContent="flex-start">
       <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
+        <Heading>Preamble</Heading>
+        <VStack spacing={2} alignItems="flex-start" justifyContent="flex-start">
+          <Text fontSize="lg">
+            If you see this page, it means that you have successfully
+            bootstraped your project by typing
+            <Code fontSize="md">
+              npx create-react-app --template @tymate/cra-template-lifegoals
+            </Code>{' '}
+            in the folder of your choice. If it isn’t the case, you should do
+            it, then follow the instructions located in the{' '}
+            <Code fontSize="md">README</Code> file.
+          </Text>
+        </VStack>
+      </VStack>
+
+      <VStack spacing={4} alignItems="flex-start" justifyContent="flex-start">
         <Heading>Checklist</Heading>
         <VStack spacing={2} alignItems="flex-start" justifyContent="flex-start">
           <Checkbox>
@@ -24,7 +40,10 @@ const App = () => (
             <Text fontSize="lg">Initial commit pushed</Text>
           </Checkbox>
           <Checkbox>
-            <Text fontSize="lg">Accessed my-json-server API (see README)</Text>
+            <Text fontSize="lg">
+              Accessed json-server (locally) or my-json-server (when deployed)
+              API
+            </Text>
           </Checkbox>
           <Checkbox>
             <Text fontSize="lg">
